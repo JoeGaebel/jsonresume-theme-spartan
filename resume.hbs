@@ -18,17 +18,13 @@
 						<img src="{{picture}}" alt="{{name}}"/>
 						<div class="middle">
 							<h1 class="name">{{name}}</h1>
-							<h2 class="label">{{label}}</h2>
 						</div>
 					{{else}}
-						<div>
 							<h1 class="name">{{name}}</h1>
-							<h2 class="label">{{label}}</h2>
-						</div>
 					{{/if}}
 
 				</header>
-
+					<hr class="trunc">
 				<section id="basics">
 
 					{{#location}}
@@ -117,10 +113,12 @@
 				</section>
 
 				</section>
+				<hr class="trunc">
 			{{/resume.basics}}
 
 			{{#if resume.work.length}}
 				<section class="section">
+					<h2 class='section-title experience'>Experience</h2>
 					<section id="work">
 					{{#each resume.work}}
 						{{#if company}}
@@ -129,7 +127,7 @@
 								{{company}}
 							</h3>
 							{{/if}}
-							<div class="date">
+							<span class="date">
 								{{#if startDate}}
 								<span class="startDate">
 									{{MY startDate}}
@@ -144,7 +142,7 @@
 									- Present
 								</span>
 								{{/if}}
-							</div>
+							</span>
 						</header>
 						<div class="item">
 						{{#if position}}
@@ -392,7 +390,7 @@
 
 			{{#if resume.languages.length}}
 				<section class="section">
-					<h2 class='section-title'>Languages</h2>
+					<h2 class='section-title languages'>Languages</h2>
 					<section id="languages">
 						{{#each resume.languages}}
 						<div class="item">
