@@ -73,7 +73,7 @@ strong {
 }
 ul {
   margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 div.item {
 
@@ -173,11 +173,6 @@ section#skills {
 	padding-bottom: 0;
 }
 
-section#education,
-.main-summary section {
-	padding-bottom: 1em;
-}
-
 header::after {
 }
 
@@ -186,20 +181,8 @@ h2.section-title {
 	font-size: 1.5rem;
 	font-weight: 400;
 	color: #757575;
-}
-
-h2.section-title.interests {
-	padding-bottom: 0.5rem;
-}
-
-h2.section-title.experience {
-	padding-bottom: 0.8rem;
-	padding-top: 1rem;
-}
-
-h2.section-title.references {
-	padding-bottom: 0.8rem;
-	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem !important;
 }
 
 .trunc {
@@ -507,4 +490,11 @@ hr {
 		padding-bottom: 8px
 	}
 
+	h2.section-title.education {
+		margin-top: -25px;
+	}
+
+	h2.section-title.references {
+		padding-bottom: 25px;
+	}
 }
