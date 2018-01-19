@@ -197,6 +197,11 @@ h2.section-title.experience {
 	padding-top: 1rem;
 }
 
+h2.section-title.references {
+	padding-bottom: 0.8rem;
+	padding-top: 1rem;
+}
+
 .trunc {
 	margin: 0 13px 0 13px;
 }
